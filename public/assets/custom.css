@@ -1,0 +1,14 @@
+.dt-buttons{
+		margin-top: 20px;
+		margin-bottom: 60px;
+		border-bottom: 1px solid #80808061;
+		padding-bottom: 20px;
+	}
+	#CatTable_filter{
+		float: right;
+	}
+    .paginate_button, .previous, .disabled{
+        background: #80808073;
+        padding: 10px;
+        margin-right: 10px;
+    }
