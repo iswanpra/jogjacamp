@@ -13,13 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-/*Route::get('/', function () {
-    return view('welcome');
-});*/
 Route::get('/',function(){
     return redirect()->route('category');
 });
-Route::get('category', [\App\Http\Controllers\CategoryController::class,'categori']);
+Route::get('category', [\App\Http\Controllers\CategoryController::class,'categori'])->name('category');
 //category_insert
 Route::post('category_insert', [\App\Http\Controllers\CategoryController::class,'category_insert']);
 //category_update

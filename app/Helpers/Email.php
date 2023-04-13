@@ -24,12 +24,12 @@ class Email
     try {
       $mail= new \PHPMailer\PHPMailer\PHPMailer(true);
       $mail->isSMTP();
-      $mail->Host       = 'smtp.gmail.com';
-      $mail->SMTPAuth   = true;
-      $mail->Username   = 'iswanprah@gmail.com';
-      $mail->Password   = 'DEVbpkad2020';
+      $mail->Host       = 'live.smtp.mailtrap.io';
+      $mail->SMTPAuth   = 'PLAIN';
+      $mail->Username   = 'api';
+      $mail->Password   = 'c98b4c2e2f050001149b3cf1412ba94a';
       $mail->SMTPSecure = 'ssl';
-      $mail->Port       = '465';
+      $mail->Port       = '587';
       $mail->SMTPDebug  = 0;
       $mail->setFrom('iswanprah@gmail.com', 'Idwebhost Tes');
       
